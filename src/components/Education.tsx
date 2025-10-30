@@ -5,21 +5,23 @@ const Education = () => {
     {
       degree: "Bachelor of Computer Science",
       institution: "VJTI, Mumbai",
-      period: "2018 - 2022",
-      description: "Specialized in Software Engineering and Web Development",
+      period: "2023 - 2027",
+      description: "CGPA: 8.63/10 (Till Sem 4)",
     },
     {
-      degree: "Full Stack Development Bootcamp",
-      institution: "Tech Academy",
-      period: "2022",
-      description: "Intensive program covering modern web technologies",
+      degree: "Higher Secondary Certificate (HSC)",
+      institution: "Khar Education Society, Mumbai",
+      period: "2021-2023",
+      description:
+    "Grades:\nHSC: 76.14%\nMHT-CET: 99.79 percentile\nJEE-MAINS: 98.43 percentile",
     },
     {
-      degree: "High School Diploma",
-      institution: "School Name",
-      period: "2014 - 2018",
-      description: "Science and Mathematics focus",
-    },
+      degree: "International General Certificate of Secondary Education (IGCSE)",
+      institution: "Podar International School, Mumbai",
+      period: "2015 - 2021",
+      description: "Grades: 8 A* & 1 A",
+}
+,
   ];
 
   return (

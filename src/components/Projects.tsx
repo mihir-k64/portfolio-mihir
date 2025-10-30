@@ -5,40 +5,34 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and MongoDB",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+      title: "ICode",
+      description:
+        "An innovative web platform designed to empower developers by providing a centralized ecosystem for tracking, learning, and collaborating. The platform integrates multiple coding platforms and development tools to offer a holistic progress tracking experience.",
+      tags: ["React", "Node.js", "MongoDB", "GraphSQL"],
+      image:
+        "https://www.hostinger.com/in/tutorials/wp-content/uploads/sites/52/2021/08/learn-coding-online-for-free.png",
+      github: "https://github.com/mihir-k64/iCode",
+      demo: "https://icode-anti.vercel.app",
     },
     {
-      title: "Task Management App",
-      description: "Real-time collaborative task manager with team features",
-      tags: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      title: "Finance Management App",
+      description:
+        "An AI-powered finance assistant that helps users analyze their financial records by generating interactive visual reports. It enables users to better understand their spending habits and investments, providing clear insights to make smarter financial decisions.",
+      tags: ["Next.js", "React", "Express.js", "Tailwind"],
+      image:
+        "https://static.vecteezy.com/system/resources/previews/001/974/655/non_2x/financial-management-banner-vector.jpg",
+      github: "https://github.com/mihir-k64/Hackaurora",
+      demo: "https://github.com/mihir-k64/Hackaurora",
     },
     {
-      title: "Portfolio Generator",
-      description: "AI-powered portfolio website generator for developers",
-      tags: ["React", "AI", "Firebase", "CSS"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather app with forecasts and visualizations",
-      tags: ["Vue.js", "API", "Charts", "CSS3"],
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Social Media Analytics",
-      description: "Analytics dashboard for social media insights",
-      tags: ["Angular", "D3.js", "REST API", "Material UI"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Chat Application",
-      description: "Real-time messaging app with voice and video calls",
-      tags: ["React", "WebRTC", "Socket.io", "Express"],
-      image: "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&h=600&fit=crop",
+      title: "Internship Recommendation System",
+      description:
+        "An AI-powered system that recommends suitable internships by analyzing users region of stay, skills, and interests to match them with relevant internships in a sea full of opportunities.",
+      tags: ["React", "Express.js", "LightGBM", "MongoDB"],
+      image:
+        "https://images.shiksha.com/mediadata/images/articles/1741585129phpQ9KUdL.jpeg",
+      github: "https://github.com/kevinzb56/SIH-2025",
+      demo: "https://github.com/kevinzb56/SIH-2025",
     },
   ];
 
@@ -77,12 +71,25 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+
+                {/* Buttons Section */}
                 <div className="flex gap-2 pt-2">
-                  <Button variant="outline" size="sm" className="flex-1">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="flex-1"
+                    onClick={() => window.open(project.github, "_blank")}
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Button>
-                  <Button variant="default" size="sm" className="flex-1">
+
+                  <Button
+                    variant="default"
+                    size="sm"
+                    className="flex-1"
+                    onClick={() => window.open(project.demo, "_blank")}
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Demo
                   </Button>

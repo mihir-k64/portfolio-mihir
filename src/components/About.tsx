@@ -37,7 +37,7 @@ const About = () => {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               My journey in tech has been driven by curiosity and a commitment to continuous 
-              learning. I believe in building products that not only work well but also delight users.
+              learning. I believe in building projects that not only work well but also delight users.
             </p>
           </div>
 

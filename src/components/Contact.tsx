@@ -12,9 +12,9 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {[
-            { icon: Mail, label: "Email", value: "your.email@example.com" },
-            { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-            { icon: MapPin, label: "Location", value: "City, Country" },
+            { icon: Mail, label: "Email", value: "mihirkatakdhond@gmail.com" },
+            { icon: Phone, label: "Phone", value: "+91 9702683961" },
+            { icon: MapPin, label: "Location", value: "India, Mumbai" },
           ].map((item, index) => (
             <div
               key={index}
