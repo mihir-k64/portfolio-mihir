@@ -1,10 +1,8 @@
-import { Moon, Sun } from "lucide-react";
+import { Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTheme } from "@/components/ThemeProvider";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const { theme, setTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -30,10 +28,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
+          {/* Left Title */}
           <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Portfolio
           </h1>
 
+          {/* Center Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {["about", "education", "achievements", "projects"].map((item) => (
               <button
@@ -46,17 +46,13 @@ const Navbar = () => {
             ))}
           </div>
 
+          {/* Right Placeholder (Moon icon for alignment aesthetic) */}
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="rounded-full"
+            className="rounded-full cursor-default hover:bg-transparent"
           >
-            {theme === "dark" ? (
-              <Sun className="h-5 w-5" />
-            ) : (
-              <Moon className="h-5 w-5" />
-            )}
+            <Moon className="h-5 w-5 text-primary/70" />
           </Button>
         </div>
       </div>
@@ -65,3 +61,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
